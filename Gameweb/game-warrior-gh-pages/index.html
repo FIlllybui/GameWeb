@@ -7,7 +7,9 @@
 	<meta name="keywords" content="warrior, game, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
-	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/weblogo32.png.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/weblogo16.png">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -25,6 +27,29 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	<style>
+		.ti-text a {
+			color: #0a73dc; /* สีลิงค์เป็นสีแดง */
+			text-decoration: none;
+			transition: all 0.3s ease;
+		}
+
+		.ti-text a:hover {
+			color: #cc0000; /* สีเข้มขึ้นเมื่อ hover */
+			text-decoration: underline;
+		}
+
+		.site-logo {
+			margin-right: 20px; /* ระยะห่างด้านขวา */
+			padding: 10px; /* ระยะห่างรอบๆ โลโก้ */
+			display: inline-block;
+		}
+
+		.site-logo:last-child {
+			margin-right: 0; /* ยกเลิกระยะห่างด้านขวาของโลโก้สุดท้าย */
+		}
+	</style>
+
 </head>
 <body>
 	<!-- Page Preloder -->
@@ -36,6 +61,9 @@
 	<header class="header-section">
 		<div class="container">
 			<!-- logo -->
+			<a class="site-logo" href="index.html">
+				<img src="img/logo2.png" alt="">
+			</a>
 			<a class="site-logo" href="index.html">
 				<img src="img/logo.png" alt="">
 			</a>
@@ -140,9 +168,9 @@
 					<div class="feature-item set-bg" data-setbg="img/features/4.png">
 						<span class="cata racing">Social</span>
 						<div class="fi-content text-white">
-							<h5><a href="#">ติดตามเพจใหม่</a></h5>
-							<p>ติดตามข่าวสารเกมได้ที่นี่</p>
-							<a href="#" class="fi-comment">3 Comments</a>
+							<h5><a href="https://www.facebook.com/profile.php?id=61574108133765">ติดตามเพจใหม่</a></h5>
+							<p><a href="https://www.facebook.com/profile.php?id=61574108133765">ติดตามข่าวสารเกมได้ที่นี่ : https://www.facebook.com/profile.php?id=61574108133765</a></p>
+							<a href="https://www.facebook.com/profile.php?id=61574108133765" class="fi-comment">3 Comments</a>
 						</div>
 					</div>
 				</div>
@@ -217,40 +245,39 @@
 	<!-- Tournaments section -->
 	<section class="tournaments-section spad">
 		<div class="container">
-			<div class="tournament-title">Tournaments</div>
+			<div class="tournament-title">JetKae Studio</div>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="tournament-item mb-4 mb-lg-0">
-						<div class="ti-notic">Premium Tournament</div>
+						<div class="ti-notic">Game</div>
 						<div class="ti-content">
-							<div class="ti-thumb set-bg" data-setbg="img/tournament/1.jpg"></div>
+							<div class="ti-thumb set-bg" data-setbg="img/tournament/1.png"></div>
 							<div class="ti-text">
-								<h4>World Of WarCraft</h4>
+								<h4>RedVeil</h4>
 								<ul>
-									<li><span>Tournament Beggins:</span> June 20, 2018</li>
-									<li><span>Tounament Ends:</span> July 01, 2018</li>
-									<li><span>Participants:</span> 10 teams</li>
-									<li><span>Tournament Author:</span> Admin</li>
+									<li><span>Status:</span> June 20, 2018</li>
+									<li><span>Date:</span> March 24, 2026</li>
+									
+									<li><span>FaceBook Page:</span> <a href="https://www.facebook.com/profile.php?id=61574108133765" target="_blank">https://www.facebook.com/profile.php?id=61574108133765</a></li>
 								</ul>
-								<p><span>Prizes:</span> 1st place $2000, 2nd place: $1000, 3rd place: $500</p>
+								<p><span>PlayGame:</span> <a href="https://filllybui.itch.io/redvile" target="_blank">https://filllybui.itch.io/redvile</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="tournament-item">
-						<div class="ti-notic">Premium Tournament</div>
+						<div class="ti-notic">Tournament</div>
 						<div class="ti-content">
-							<div class="ti-thumb set-bg" data-setbg="img/tournament/2.jpg"></div>
+							<div class="ti-thumb set-bg" data-setbg="img/tournament/2.png"></div>
 							<div class="ti-text">
-								<h4>DOOM</h4>
+								<h4>RedVeil Tournament BBK</h4>
 								<ul>
-									<li><span>Tournament Beggins:</span> June 20, 2018</li>
-									<li><span>Tounament Ends:</span> July 01, 2018</li>
-									<li><span>Participants:</span> 10 teams</li>
-									<li><span>Tournament Author:</span> Admin</li>
+									<li><span>Tournament Beggins:</span> May 20, 2027</li>
+									<li><span>Participants:</span> 16 teams</li>
+									<li><span>Location:</span> บ้านหนองจอก</li>
 								</ul>
-								<p><span>Prizes:</span> 1st place $2000, 2nd place: $1000, 3rd place: $500</p>
+								<p><span>Prizes:</span> 1st place 2000บาท, 2nd place: 1000บาท, 3rd place: 500บาท</p>
 							</div>
 						</div>
 					</div>
@@ -260,66 +287,7 @@
 	</section>
 	<!-- Tournaments section bg -->
 
-
-	<!-- Review section -->
-	<section class="review-section spad set-bg" data-setbg="img/review-bg.png">
-		<div class="container">
-			<div class="section-title">
-				<div class="cata new">new</div>
-				<h2>Recent Reviews</h2>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img/review/1.jpg">
-							<div class="score yellow">9.3</div>
-						</div>
-						<div class="review-text">
-							<h5>Assasin’’s Creed</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img/review/2.jpg">
-							<div class="score purple">9.5</div>
-						</div>
-						<div class="review-text">
-							<h5>Doom</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img/review/3.jpg">
-							<div class="score green">9.1</div>
-						</div>
-						<div class="review-text">
-							<h5>Overwatch</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img/review/4.jpg">
-							<div class="score pink">9.7</div>
-						</div>
-						<div class="review-text">
-							<h5>GTA</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Review section end -->
-
-
-	<!-- Footer top section -->
+		<!-- Footer top section -->
 	<section class="footer-top-section">
 		<div class="container">
 			<div class="footer-top-bg">
