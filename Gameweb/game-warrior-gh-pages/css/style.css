@@ -142,7 +142,7 @@ ol {
 	border-radius: 50px;
 	font-weight: 500;
 	border: none;
-	background: #ffb320;
+	background: #ff0707;
 	cursor: pointer;
 }
 
@@ -152,7 +152,10 @@ ol {
 }
 
 .site-btn:hover {
-	color: #131313;
+	background-color: #ffffff;
+	color: #ff0000;
+	border: 2px solid #ff0000;
+	
 }
 
 .cata {

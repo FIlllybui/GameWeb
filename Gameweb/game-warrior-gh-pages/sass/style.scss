@@ -6,7 +6,7 @@
  ====================================*/
 
 
-$color1: #ffb320;
+$color1: #f70000;
 $color2: #131313;
 
 /*----------------------------------------*/
@@ -141,7 +141,7 @@ ol {
   border-radius: 50px;
   font-weight: 500;
   border: none;
-  background: $color1;
+  background-color: rgb(255, 0, 0);
   cursor: pointer;
   &.btn-sm {
     padding: 10px 30px;
@@ -258,7 +258,7 @@ ol {
 .user-panel {
   float: right;
   font-weight: 500;
-  background: $color1;
+  background: $color3;
   padding: 8px 28px;
   border-radius: 30px;
   a {
