@@ -40,13 +40,53 @@
 		}
 
 		.site-logo {
-			margin-right: 20px; /* ระยะห่างด้านขวา */
-			padding: 10px; /* ระยะห่างรอบๆ โลโก้ */
+			background-color: #ffffff; /* พื้นหลังสีขาว */
+			padding: 15px 25px; /* ระยะห่างด้านในป้าย */
+			border-radius: 8px; /* มุมโค้ง */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงา */
 			display: inline-block;
+			margin-right: 20px;
+			transition: all 0.3s ease;
+		}
+
+		/* เมื่อ hover จะมี effect ยกตัวขึ้น */
+		.site-logo:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+		}
+
+		/* เพิ่มขอบป้าย */
+		.site-logo {
+			border: 2px solid #e0e0e0;
 		}
 
 		.site-logo:last-child {
 			margin-right: 0; /* ยกเลิกระยะห่างด้านขวาของโลโก้สุดท้าย */
+		}
+
+		.redveil-title {
+			background-color: #ff0000; /* พื้นหลังสีแดง */
+			color: #ffffff; /* ตัวอักษรสีขาว */
+			padding: 15px 30px; /* ระยะห่างด้านในป้าย */
+			border-radius: 10px; /* มุมโค้ง */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เงาใต้ป้าย */
+			display: inline-block; /* ทำให้กล่องมีขนาดพอดีกับเนื้อหา */
+			font-weight: bold; /* ตัวหนา */
+		}
+		
+		img[src*="logogif.gif"] {
+			border-radius: 20px; /* ทำให้ขอบมน */
+			
+			box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* เพิ่มแสงรอบๆ */
+			padding: 5px; /* เพิ่มระยะห่างรอบรูป */
+		}
+
+		/* หรือถ้าต้องการให้ขอบเบลอแต่รูปคมชัด */
+		img[src*="logogif.gif"] {
+			border-radius: 20px;
+			box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.3); /* เพิ่มเงาแบบเบลอ */
+			padding: 10px;
+			background: rgba(255, 255, 255, 0.1); /* พื้นหลังโปร่งแสง */
 		}
 	</style>
 
@@ -78,10 +118,10 @@
 			<nav class="main-menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="review.html">Games</a></li>
-					<li><a href="categories.html">Blog</a></li>
-					<li><a href="community.html">Forums</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="https://filllybui.itch.io/redvile">Games</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Forums</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -96,7 +136,7 @@
 				<div class="hs-text">
 					<div class="container">
 						<h2> <span>Red</span> Veil</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada <br> lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. <br>Suspendisse cursus faucibus finibus.</p>
+						<p>เกม Soul-like Action RPG ที่พัฒนาด้วย Unity โดยรับบทเป็น Game Designer และ Project Manager ในการพัฒนาเกมนี้ได้รับแรงบันดาลใจมาจากเกม Dark Soul และ Elden Ring<br>  โดยเน้นการต่อสู้ที่ท้าทายและการใช้ภาพที่เเปลกใหม่ <br>เปิดให้ทดลองเล่นฟรีแล้วผ่าน ITCH.IO</p>
 						<a href="https://filllybui.itch.io/redvile" class="site-btn">Play Now</a>
 
 					</div>
@@ -106,7 +146,7 @@
 				<div class="hs-text">
 					<div class="container">
 						<h2> <span>Red</span> Veil</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada <br> lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. <br>Suspendisse cursus faucibus finibus.</p>
+						<p>เกมดังกล่าวดำเนินเรื่องอยู่ในโลกแฟนตาซีอันมืดมิด ผู้เล่นจะสวมบทบาทเป็นนักรบผู้มีหน้าที่พิชิต Avalon Tower ซึ่งเป็นป้อมปราการอันต้องคำสาปที่ปลดปล่อยพลังแห่งความหายนะที่คุกคามที่จะทำลายล้างโลก</p>
 						<a href="https://filllybui.itch.io/redvile" class="site-btn">Play Now</a>
 					</div>
 				</div>
@@ -121,9 +161,9 @@
 		<div class="ln-title">Latest News</div>
 		<div class="news-ticker">
 			<div class="news-ticker-contant">
-				<div class="nt-item"><span class="new">new</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-				<div class="nt-item"><span class="strategy">strategy</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
-				<div class="nt-item"><span class="racing">racing</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
+				<div class="nt-item"><span class="new">new</span>Patch Updated</div>
+				<div class="nt-item"><span class="strategy">new</span>Like Page Facebook Now!</div>
+				<div class="nt-item"><span class="racing">racing</span>Redveil Tournament BKK</div>
 			</div>
 		</div>
 	</div>
@@ -135,12 +175,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 p-0">
-					<div class="feature-item set-bg" data-setbg="img/features/1.png">
+					<div class="feature-item set-bg" data-setbg="img/features/3.png">
 						<span class="cata new">new</span>
 						<div class="fi-content text-white">
-							<h5><a href="#">Updated Itch.IO</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-							<a href="#" class="fi-comment">3 Comments</a>
+							<h5><a href="https://filllybui.itch.io/redvile">New Patch Updated in ITCH.IO</a></h5>
+							<p><a href="https://filllybui.itch.io/redvile">ทดลองเล่นได้เลยที่: https://filllybui.itch.io/redvile</a></p>
+							<a href="https://filllybui.itch.io/redvile" class="fi-comment">3 Comments</a>
 						</div>
 					</div>
 				</div>
@@ -148,19 +188,19 @@
 					<div class="feature-item set-bg" data-setbg="img/features/2.png">
 						<span class="cata strategy">strategy</span>
 						<div class="fi-content text-white">
-							<h5><a href="#">Justo tempor, rutrum erat id, molestie</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-							<a href="#" class="fi-comment">3 Comments</a>
+							<h5><a href="https://filllybui.itch.io/redvile">New Patch Updated in ITCH.IO </a></h5>
+							<p><a href="https://filllybui.itch.io/redvile">Updated New Boss ทดลองเล่นได้เลยที่: https://filllybui.itch.io/redvile</a></p>
+							<a href="https://filllybui.itch.io/redvile" class="fi-comment">3 Comments</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 p-0">
-					<div class="feature-item set-bg" data-setbg="img/features/3.png">
-						<span class="cata new">new</span>
+					<div class="feature-item set-bg" data-setbg="img/features/5.png">
+						<span class="cata racing">New</span>
 						<div class="fi-content text-white">
-							<h5><a href="#">New Patch Updated</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-							<a href="#" class="fi-comment">3 Comments</a>
+							<h5><a href="https://www.facebook.com/profile.php?id=61574108133765">เปิดให้ทดลองเล่น PlayTest</a></h5>
+							<p><a href="https://www.facebook.com/profile.php?id=61574108133765">เปิดรับการ PlayTest ครั้งแรกที่ มหาวิทยาลัยเชียงใหม่</a></p>
+							<a href="https://www.facebook.com/profile.php?id=61574108133765" class="fi-comment">13 Comments</a>
 						</div>
 					</div>
 				</div>
@@ -184,18 +224,17 @@
 	<section class="recent-game-section spad set-bg" data-setbg="img/recent-game-bg.png">
 		<div class="container">
 			<div class="section-title">
-				<div class="cata new">new</div>
-				<h2>Recent Games</h2>
+				<h2 class="redveil-title">RedVeil</h2>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
-						<div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.jpg">
-							<div class="cata new">new</div>
+						<div class="rgi-thumb set-bg" data-setbg="img/recent-game/1.png">
+							<div class="cata new">OurGame</div>
 						</div>
 						<div class="rgi-content">
-							<h5>Suspendisse ut justo tem por, rutrum</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
+							<h5>คำอธิบายเกม</h5>
+							<p>เกม Soul-like Action RPG ที่พัฒนาด้วย Unity โดยรับบทเป็น Game Designer และ Project Manager ในการพัฒนาเกมนี้ได้รับแรงบันดาลใจมาจากเกม Dark Soul และ Elden Ring โดยเน้นการต่อสู้ที่ท้าทายและการใช้ภาพที่เเปลกใหม่ </p>
 							<a href="#" class="comment">3 Comments</a>
 							<div class="rgi-extra">
 								<div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
@@ -206,12 +245,13 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
-						<div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.jpg">
-							<div class="cata racing">racing</div>
+						<div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.png">
+							<div class="cata racing">Story
+							</div>
 						</div>
 						<div class="rgi-content">
-							<h5>Susce pulvinar metus nulla, vel  facilisis sem </h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
+							<h5>โลกของคุณ</h5>
+							<p>ในฐานะอัศวินแห่งอาณาจักร คุณต้องปีนขึ้นไปบนหอคอยและหยุดเขาให้ได้ก่อนที่มันจะสายเกินไป ผู้ที่ขวางทางคุณอยู่ก็คือเหล่าผู้พิทักษ์ อัศวินผู้พ่ายแพ้ที่เคยพยายามปีนหอคอยมาก่อนแต่ล้มเหลว ตอนนี้พวกเขาถูกสาปให้ต้องปกป้องหอคอย จงเอาชนะพวกเขา ทำลายคำสาป และเรียกร้องพลังของพวกเขาเพื่อให้แข็งแกร่งขึ้นเรื่อยๆ </p>
 							<a href="#" class="comment">3 Comments</a>
 							<div class="rgi-extra">
 								<div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
@@ -222,12 +262,12 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
-						<div class="rgi-thumb set-bg" data-setbg="img/recent-game/3.jpg">
+						<div class="rgi-thumb set-bg" data-setbg="img/recent-game/3.png">
 							<div class="cata adventure">Adventure</div>
 						</div>
 						<div class="rgi-content">
-							<h5>Suspendisse ut justo tem por, rutrum</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit amet, consectetur elit. </p>
+							<h5>ตัวเกม</h5>
+							<p>เกมดังกล่าวดำเนินเรื่องอยู่ในโลกแฟนตาซีอันมืดมิด ผู้เล่นจะสวมบทบาทเป็นนักรบผู้มีหน้าที่พิชิต Avalon Tower ซึ่งเป็นป้อมปราการอันต้องคำสาปที่ปลดปล่อยพลังแห่งความหายนะที่คุกคามที่จะทำลายล้างโลก</p>
 							<a href="#" class="comment">3 Comments</a>
 							<div class="rgi-extra">
 								<div class="rgi-star"><img src="img/icons/star.png" alt=""></div>
@@ -243,9 +283,11 @@
 
 
 	<!-- Tournaments section -->
+
 	<section class="tournaments-section spad">
+		
 		<div class="container">
-			<div class="tournament-title">JetKae Studio</div>
+			<div class="tournament-title">JetKae Studio New</div>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="tournament-item mb-4 mb-lg-0">
@@ -296,36 +338,21 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="footer-logo text-white">
-						<img src="img/footer-logo.png" alt="">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+						<img src="img/logogif.gif" alt="">
+						<h1 style="text-align: center;">JetKae Studio</h1>
+						<p style="text-align: center;">Studio of Game Developer</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-widget mb-5 mb-md-0">
-						<h4 class="fw-title">Latest Posts</h4>
+						<h4 class="fw-title">Latest Game</h4>
 						<div class="latest-blog">
 							<div class="lb-item">
-								<div class="lb-thumb set-bg" data-setbg="img/latest-blog/1.jpg"></div>
+								<div class="lb-thumb set-bg" data-setbg="img/logo4.png"></div>
 								<div class="lb-content">
-									<div class="lb-date">June 21, 2018</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum </p>
-									<a href="#" class="lb-author">By Admin</a>
-								</div>
-							</div>
-							<div class="lb-item">
-								<div class="lb-thumb set-bg" data-setbg="img/latest-blog/2.jpg"></div>
-								<div class="lb-content">
-									<div class="lb-date">June 21, 2018</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum </p>
-									<a href="#" class="lb-author">By Admin</a>
-								</div>
-							</div>
-							<div class="lb-item">
-								<div class="lb-thumb set-bg" data-setbg="img/latest-blog/3.jpg"></div>
-								<div class="lb-content">
-									<div class="lb-date">June 21, 2018</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum </p>
-									<a href="#" class="lb-author">By Admin</a>
+									<div class="lb-date">RedVeil</div>
+									<p>เกม Soul-like Action RPG โดยเน้นการต่อสู้ที่ท้าทายและการใช้ภาพที่เเปลกใหม่ </p>
+									<a href="https://filllybui.itch.io/redvile" class="lb-author">https://filllybui.itch.io/redvile</a>
 								</div>
 							</div>
 						</div>
@@ -333,34 +360,34 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-widget">
-						<h4 class="fw-title">Top Comments</h4>
+						<h4 class="fw-title">Member</h4>
 						<div class="top-comment">
 							<div class="tc-item">
-								<div class="tc-thumb set-bg" data-setbg="img/authors/1.jpg"></div>
+								<div class="tc-thumb set-bg" data-setbg="img/authors/1.png"></div>
 								<div class="tc-content">
-									<p><a href="#">James Smith</a> <span>on</span>  Lorem ipsum dolor sit amet, co</p>
-									<div class="tc-date">June 21, 2018</div>
+									<p><a href="#">Aphiwit Boonyakiat</a> <span>on</span>Game Designer</p>
+									<div class="tc-date">652110260</div>
 								</div>
 							</div>
 							<div class="tc-item">
-								<div class="tc-thumb set-bg" data-setbg="img/authors/2.jpg"></div>
+								<div class="tc-thumb set-bg" data-setbg="img/authors/2.png"></div>
 								<div class="tc-content">
-									<p><a href="#">James Smith</a> <span>on</span>  Lorem ipsum dolor sit amet, co</p>
-									<div class="tc-date">June 21, 2018</div>
+									<p><a href="#">Saowarot Prongjai</a> <span>on</span>Game Artist</p>
+									<div class="tc-date">652110256</div>
 								</div>
 							</div>
 							<div class="tc-item">
-								<div class="tc-thumb set-bg" data-setbg="img/authors/3.jpg"></div>
+								<div class="tc-thumb set-bg" data-setbg="img/authors/3.png"></div>
 								<div class="tc-content">
-									<p><a href="#">James Smith</a> <span>on</span>  Lorem ipsum dolor sit amet, co</p>
-									<div class="tc-date">June 21, 2018</div>
+									<p><a href="#">Kanjanawat Muangkam</a> <span>on</span>Game Developer</p>
+									<div class="tc-date">652110216</div>
 								</div>
 							</div>
 							<div class="tc-item">
-								<div class="tc-thumb set-bg" data-setbg="img/authors/4.jpg"></div>
+								<div class="tc-thumb set-bg" data-setbg="img/authors/4.png"></div>
 								<div class="tc-content">
-									<p><a href="#">James Smith</a> <span>on</span>  Lorem ipsum dolor sit amet, co</p>
-									<div class="tc-date">June 21, 2018</div>
+									<p><a href="#">Euaungkul patummanee</a> <span>on</span>Game Developer</p>
+									<div class="tc-date">652110263</div>
 								</div>
 							</div>
 						</div>
@@ -377,15 +404,11 @@
 		<div class="container">
 			<ul class="footer-menu">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="review.html">Games</a></li>
-				<li><a href="categories.html">Blog</a></li>
-				<li><a href="community.html">Forums</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+					<li><a href="https://filllybui.itch.io/redvile">Games</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Forums</a></li>
+					<li><a href="#">Contact</a></li>
+			</ul>			
 		</div>
 	</footer>
 	<!-- Footer section end -->
